@@ -1,0 +1,358 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 1vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#hello{
+  background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 4.17rem;
+}
+
+.inner-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rem;
+  max-width: 1500px;
+  margin-top: calc(11.12em + 2em);
+}
+
+.cavalier {
+  margin-top: -3.5em;
+  text-align: left;
+  position: relative;
+}
+
+.cavalier-content {
+  position: relative;
+}
+
+.cavalier h1 {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  font-size: 4.4em;
+  color: #ccf381;
+  max-width: 30vw;
+  -webkit-transition-delay: 200ms;
+  transition-delay: 200ms;
+  margin: 0;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  transition: transform 0.5s, opacity 0.2s;
+}
+
+.cavalier h1 > span > span {
+  color: #eeffff;
+}
+
+.cavalier p {
+  font-size: 1.3em;
+  color: #fff;
+  max-width: 701px;
+  transition-delay: 310ms;
+  line-height: 1.6;
+  transition: transform 0.5s, opacity 0.2s;
+  width: 32vw;
+}
+
+.visage {
+  margin-right: calc(6em + 4em);
+  margin: 0;
+  z-index: 1;
+  width: 23.334em;
+  height: 24.67em;
+  position: relative;
+  border: 0.115rem solid #fff;
+  margin-right: calc(6em + 4em);
+}
+
+#avatar-shapes {
+  top: -25%;
+  width: 40em;
+  z-index: -1;
+  height: 126%;
+  right: -5.4em;
+  position: absolute;
+}
+
+.handsome {
+    width: inherit;
+  display: block;
+  height: inherit;
+  margin-top: -2.435em;
+  background-color: #fff;
+  background-size: cover;
+  background-position-x: center;
+  margin-left: -2.2em;
+  background-image: url("../images/Dayvson%20Vinicius.jpeg");
+}
+
+
+
+#whoiam{
+  padding: 40px;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#whoiam h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #4831d4;
+}
+
+#whoiam p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+
+#skills-content{
+  padding: 0;
+}
+
+#skills-content ul{
+  padding: 0;
+  font-size: 14px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#skills-content ul li{
+  padding: 10px;
+  width: 100%;
+  border: 3px solid #4831d4 ;
+}
+
+#skills-content ul li:nth-child(2){
+  border-left: none;
+  border-right: none;
+}
+
+#skills-content ul li header{
+  display: flex;
+  align-items: center;
+}
+
+#skills-content ul li header svg{
+  font-size: 3em;
+  margin-right: 8px;
+  color: #4831d4;
+}
+
+#skills-content ul li header h2{
+  margin: 0;
+  line-height: 1;
+  position: relative;
+}
+
+#skills-content ul li header h2:before{
+  content: '';
+  background-color: #ff82d0;
+  width: 104%;
+  height: 8px;
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+  left: -2px;
+}
+
+#skills-content ul li:nth-child(2) header h2:before{
+  background-color: #8291ff;
+}
+
+#skills-content ul li:nth-child(3) header h2:before{
+  background-color: #ffc930;
+  width: 45%;
+}
+
+#skills-content ul li p{
+  padding: 0;
+}
+
+.wave-container {  
+  height: 15vh;
+  background-color: #fff;
+  position: relative;
+}
+
+.wave-container.end {  
+  background-color: #ccf381;
+}
+
+.wave-container::before {   
+  content: "";
+  width: 100%;
+  height: 16px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 17vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23ccf381'/></svg>");
+}
+
+.wave-container.end::before {   
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23ffffff'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {    
+    height: 8px
+  }  
+}
+
+#mywork{
+  background-color: #ccf381;
+  padding: 40px 20px;
+}
+
+#mywork h1{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 80px;
+}
+
+#mywork .group-work{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#mywork a{
+  display: inline-block;
+  width: 32%;
+}
+
+#mywork figure{
+  position: relative;
+  height: 400px;
+  width: 96%;
+  background-size: 100% auto;
+  background-position: 0 0%;
+  transition: 7s background-position ease-in-out;
+  overflow: hidden;
+}
+
+#mywork figure:hover{
+  background-position: 0 100%;
+}
+
+#mywork figcaption{
+  position: absolute;
+  color: #fff;
+  background-color: #4831d4;
+  rotate: -45deg;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  left: -26%;
+  padding: 3px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#course{
+  text-align: center;
+  font-size: 25px;
+  color: #4831d4;
+  max-height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+#course img{
+  max-width: 300px;
+}
+
+#course button{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffffe0;
+  padding: 20px;
+  z-index: 10000;
+  border: none;
+  box-shadow: -10px 0 20px #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.spikes {
+  position: relative;
+  background: #fff;
+  height: 0;
+}
+
+.spikes::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -5%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, #fff 25%, transparent 25%), linear-gradient(225deg, #fff 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+#contact{
+  background-color: #030e28;
+  padding: 40px 20px;
+  color: #ccf381;
+  text-align: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+#contact a{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#contact .center{
+  display: flex;
+  justify-content: center;
+}
+
+#contact a svg{
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  html{
+    font-size: 0.9rem;
+  }
+}
