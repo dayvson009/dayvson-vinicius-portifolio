@@ -5,18 +5,218 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Obras</title>
 </head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&family=Roboto&display=swap');
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+    #mywork{
+    padding: 40px 20px;
+  }
+
+  #mywork h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 80px;
+  }
+
+  #mywork .group-work{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #mywork a{
+    display: inline-block;
+    width: 32%;
+  }
+
+  #mywork figure{
+    position: relative;
+    height: 400px;
+    width: 96%;
+    background-size: 100% auto;
+    background-position: 0 0%;
+    transition: 7s background-position ease-in-out;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+
+  #mywork figure:hover{
+    background-position: 0 100%;
+  }
+
+  #mywork figcaption{
+    position: absolute;
+    color: #fff;
+    background-color: #4831d4;
+    rotate: -45deg;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    left: -26%;
+    padding: 3px 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .preview{
+    display: none;
+    padding: 20px 40px 20px 20px;
+  }
+
+  .preview h1{
+    text-align: center;
+  }
+
+  .preview article{
+    display: flex;
+  }
+
+  .preview img{
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 4px 12px #000;
+  }
+
+  .preview p{
+    width: 80%;
+    padding-left: 40px;
+    line-height: 1.6;
+    font-family: "Roboto";
+  }
+</style>
 <body>
-  <h1>Selecione uma obra na qual gostaria de ver</h1>
-  <div class="preview">
-    <img src="./images/trabalhos/criativismoart.png">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <section id="mywork">
+    <h1>Selecione uma obra na qual gostaria de ver</h1>
+    <div class="group-work">
+      <a href="preview?obra=criativismo">
+        <figure style="background-image: url('./images/trabalhos/criativismoart.png');">
+          <figcaption>
+            Criativismo
+          </figcaption>
+        </figure>
+      </a>
+      <a href="preview?obra=ekaut">
+        <figure style="background-image: url('./images/trabalhos/ekaut.png');">
+          <figcaption>
+            Ekaut
+          </figcaption>
+        </figure>
+      </a>
+      <a href="preview?obra=pontelab">
+        <figure style="background-image: url('./images/trabalhos/pontelab.png');">
+          <figcaption>
+            Pontelab
+          </figcaption>
+        </figure>
+      </a>
+      <a href="preview?obra=radarcomunica">
+        <figure style="background-image: url('./images/trabalhos/radarcomunica.png');">
+          <figcaption>
+            Radar Comunica
+          </figcaption>
+        </figure>
+      </a>
+      <a href="preview?obra=segsat">
+        <figure style="background-image: url('./images/trabalhos/segsat.png');">
+          <figcaption>
+            Segsat Rastreamento
+          </figcaption>
+        </figure>
+      </a>
+      <a href="preview?obra=estampa">
+        <figure style="background-image: url('./images/trabalhos/stampaoutdoor.png');">
+          <figcaption>
+            STAMPA OUTDOOR
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  </section>
+  <div class="preview" id="criativismo">
+    <h1>Criativismo</h1>
+    <article>
+      <img src="./images/trabalhos/criativismoart.png">
+      <p>O site <b>Criativismo</b> foi um pedido pedido da renomada agência Pontelab, onde realizei todo desenvolvimento do frontend e backend. Utilizando tecnologias de ponta como HTML5, CSS3 e JavaScript, o site oferecia uma experiência interativa e dinâmica. Além disso, contava com um sistema de Gerenciamento de Conteúdo (CMS) para facilitar a edição de imagens, sendo o backend desenvolvido em PHP.
+        <br>
+        <br>
+Embora o site não esteja mais ativo, você ainda pode visualizá-lo e explorar suas funcionalidades através deste link <a href="https://web.archive.org/web/20160114010813/http://criativismoart.com/">CriativismoArt</a> (observando que algumas interações podem estar desabilitadas). O design deste projeto foi concebido pelo talentoso profissional Mazaroto.</p>
+    </article>
   </div>
 
-  <script type="text/javascript"></script>
+  <div class="preview" id="ekaut">
+    <h1>Ekaut</h1>
+    <article>
+      <img src="./images/trabalhos/ekaut.png">
+      <p>O site <b>Ekaut</b> foi um pedido pedido da renomada agência Pontelab, onde realizei todo desenvolvimento do frontend e backend. Utilizando tecnologias de ponta como HTML5, CSS3 e JavaScript, o site oferecia uma experiência interativa e dinâmica. Além disso, contava com um sistema de Gerenciamento de Conteúdo (CMS) para facilitar a edição de imagens, sendo o backend desenvolvido em PHP.
+        <br>
+        <br>
+Embora o site não esteja mais ativo, você ainda pode visualizá-lo e explorar suas funcionalidades através deste link <a href="https://web.archive.org/web/20180311101829/http://ekaut.com.br/#!/inicio">Ekaut</a> (observando que algumas interações podem estar desabilitadas). O design deste projeto foi concebido pelo talentoso profissional Mazaroto.</p>
+    </article>
+  </div>
+
+  <div class="preview" id="pontelab">
+    <h1>Pontelab</h1>
+    <article>
+      <img src="./images/trabalhos/pontelab.png">
+      <p>Em 2018, o site <b>Pontelab</b> foi o site da renomada agência, foi um desafio que superou todas expectativas, onde mostravamos a elegância do preto e branco, em curvas e linhas discretas. Todo desenvolvimento do frontend e backend foi realizado por mim e por mais um colaborador. Utilizando tecnologias de ponta como HTML5, CSS3 e JavaScript, o site oferecia uma experiência interativa e dinâmica. Além disso, contava com um sistema de Gerenciamento de Conteúdo (CMS) para facilitar a edição de imagens, sendo o backend desenvolvido em PHP.
+        <br>
+        <br>
+Embora o site não esteja mais ativo, você ainda pode visualizá-lo e explorar suas funcionalidades através deste link <a href="https://web.archive.org/web/20180224003300/http://pontelab.com/pt#!/home">Pontelab</a> (observando que algumas interações podem estar desabilitadas). O design deste projeto foi concebido pelo talentoso profissional Mazaroto.</p>
+    </article>
+  </div>
+
+  <div class="preview" id="radarcomunica">
+    <h1>Radar Comunica</h1>
+    <article>
+      <img src="./images/trabalhos/radarcomunica.png">
+      <p>O site <b>Radar Comunica</b> foi um pedido pedido da renomada agência Pontelab, onde realizei todo desenvolvimento do frontend e backend. Utilizando tecnologias de ponta como HTML5, CSS3 e JavaScript, o site oferecia uma experiência interativa e dinâmica. Além disso, contava com um sistema de Gerenciamento de Conteúdo (CMS) para facilitar a edição de imagens, sendo o backend desenvolvido em PHP.
+        <br>
+        <br>
+Embora o site não esteja mais ativo, você ainda pode visualizá-lo e explorar suas funcionalidades através deste link <a href="https://web.archive.org/web/20161001234801/http://radarcomunica.com.br/">Radar Comunica</a> (observando que algumas interações podem estar desabilitadas). O design deste projeto foi concebido pelo talentoso profissional Mazaroto.</p>
+    </article>
+  </div>
+
+  <div class="preview" id="segsat">
+    <h1>Segsat</h1>
+    <article>
+      <img src="./images/trabalhos/segsat.png">
+      <p>O site <b>Segsat</b> foi um realizado no período em que eu trabalhava juntamente com a equipe de rastreamento. onde realizei todo desenvolvimento do frontend e backend. Utilizando tecnologias de ponta como HTML5, CSS3 e JavaScript, o site oferecia uma experiência interativa e dinâmica. Além disso, Todo seu Backend foi desenvolvido em NodeJs Para edição no Servidor local e online.
+        <br>
+        <br>
+O site continua ativo ainda hoje. O design deste projeto foi concebido pela equipe de marketing desta empresa, são pessoas maravilhosas, amei trabalhar com cada uma delas.</p>
+    </article>
+  </div>
+
+  <div class="preview" id="stampa">
+    <h1>STAMPA</h1>
+    <article>
+      <img src="./images/trabalhos/stampaoutdoor.png">
+      <p>O site <b>STAMPA</b> foi um pedido pedido da renomada agência Pontelab, para uma agencia de Outdoor de Recife muito conhecida. Onde realizei todo desenvolvimento do frontend e backend. Utilizando tecnologias de ponta como HTML5, CSS3 e JavaScript, o site oferecia uma experiência interativa e dinâmica. Além disso, contava com um sistema de Gerenciamento de Conteúdo (CMS) para facilitar a edição de imagens, sendo o backend desenvolvido em PHP.
+        <br>
+        <br>
+O site já não está no mesmo modelo do passado, mas continua ativo. O design deste projeto foi concebido pelo talentoso profissional Mazaroto.</p>
+    </article>
+  </div>
+
+  <script type="text/javascript">
+    const obra = window.location.search.split("=")[1];
+    if(obra != undefined){
+      document.getElementById("mywork").style.display = "none";
+      document.getElementById(obra).style.display = "block";
+    }
+
+  </script>
 </body>
 </html>
