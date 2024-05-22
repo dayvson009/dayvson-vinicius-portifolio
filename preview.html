@@ -21,7 +21,8 @@
     font-style: normal;
   }
 
-    #mywork{
+  #mywork{
+    background-color: #fff;
     padding: 40px 20px;
   }
 
@@ -34,11 +35,13 @@
   #mywork .group-work{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   #mywork a{
     display: inline-block;
     width: 32%;
+    margin-bottom: 10px;
   }
 
   #mywork figure{
@@ -49,7 +52,7 @@
     background-position: 0 0%;
     transition: 7s background-position ease-in-out;
     overflow: hidden;
-    border: 1px solid #ccc;
+    margin: 0;
   }
 
   #mywork figure:hover{
@@ -61,10 +64,10 @@
     color: #fff;
     background-color: #4831d4;
     rotate: -45deg;
-    top: 15%;
-    width: 100%;
     text-align: center;
-    left: -26%;
+    width: 135%;
+    top: 15%;
+    left: -37%;
     padding: 3px 0;
     font-weight: bold;
     font-size: 18px;
@@ -85,7 +88,7 @@
 
   .preview img{
     display: inline-block;
-    width: 100%;
+    width: 55%;
     box-shadow: 0px 4px 12px #000;
   }
 
@@ -95,6 +98,114 @@
     line-height: 1.6;
     font-family: "Roboto";
   }
+
+  @media only screen and (max-width: 700px) {
+    .preview{
+      padding: 20px;
+    }
+
+    .preview article {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .preview p{
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .preview img{
+      width: 100%;
+      max-width: 500px;
+    }
+
+    #mywork a{
+      width: 40%;
+    }
+  }
+
+@media only screen and (max-width: 550px) {
+  #hello {
+    background: linear-gradient(180deg, #4831d4 45%, #ccf381 45%);
+    padding-bottom: 3rem;
+  }
+
+  .inner-content{
+    flex-direction: column;
+    padding: 0 5rem;
+    margin-top: calc(0em + 2em);
+  }
+
+  .cavalier{
+    width: 100%;
+    margin-top: 0;
+  }
+  .cavalier h1{
+    width: 100%;
+    max-width: 100%;
+  }
+  .cavalier p{
+    width: 100%;
+  }
+
+  .visage{
+    margin-top: 7rem;
+  }
+
+  #avatar-shapes{
+    top: -70%;
+    right: 4.6em;
+  }
+
+  #mywork a{
+    width: 100%;
+  }
+
+  #mywork figure{
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #hello{
+      background: linear-gradient(180deg, #4831d4 50%, #ccf381 45%);
+  }
+
+  .inner-content{
+    padding: 0 20px;
+  }
+
+  #contact .center{
+    flex-direction: column;
+  }
+
+  .visage{
+    margin-right: -3rem;
+  }
+  #mywork a{
+    width: 80%;
+  }
+  #mywork figure{
+    height: 300px;
+    overflow: visible;
+  }
+
+  #mywork figcaption{
+        transform: rotate(45deg);
+    width: 104%;
+    left: -2%;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    line-height: 1;
+    margin: auto;
+    box-shadow: 0px 5px 8px -5px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 </style>
 <body>
   <section id="mywork">

@@ -158,8 +158,16 @@
         <img src="./images/cursos/Dayvson Vinicius - Curso React_ entendendo como a biblioteca funciona - Alura.jpg">
         <img src="./images/cursos/Dayvson Vinicius - Curso UML_ modelagem de soluções - Alura.jpg">
         <img src="./images/cursos/Dayvson Vinicius - Curso WebSockets_ implemente comunicações em tempo real com Socket.IO e MongoDB - Alura.jpg">
-        <button>Ver mais</button>
+        <button id="loadmore">Ver mais</button>
     </section>
+    <script type="text/javascript">
+      const loadmore = document.getElementById("loadmore")
+      const course = document.getElementById("course")
+      loadmore.addEventListener("click", () => {
+        course.style.height = "auto";
+        loadmore.style.display = "none";
+      })
+    </script>
     <div class="spikes"></div>
     <section id="contact">
       <h1>Curtiu? Me chama!</h1>

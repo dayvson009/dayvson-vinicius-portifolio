@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 4.17rem;
+  padding-bottom: 10rem;
 }
 
 .inner-content {
@@ -78,7 +78,6 @@ body {
 }
 
 .visage {
-  margin-right: calc(6em + 4em);
   margin: 0;
   z-index: 1;
   width: 23.334em;
@@ -125,13 +124,13 @@ body {
 }
 
 #whoiam p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
 
 #skills-content{
-  padding: 0;
+  padding: 20px;
 }
 
 #skills-content ul{
@@ -243,11 +242,13 @@ body {
 #mywork .group-work{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #mywork a{
   display: inline-block;
   width: 32%;
+  margin-bottom: 10px;
 }
 
 #mywork figure{
@@ -258,6 +259,7 @@ body {
   background-position: 0 0%;
   transition: 7s background-position ease-in-out;
   overflow: hidden;
+  margin: 0;
 }
 
 #mywork figure:hover{
@@ -269,10 +271,10 @@ body {
   color: #fff;
   background-color: #4831d4;
   rotate: -45deg;
-  top: 15%;
-  width: 100%;
   text-align: center;
-  left: -26%;
+  width: 135%;
+  top: 15%;
+  left: -37%;
   padding: 3px 0;
   font-weight: bold;
   font-size: 18px;
@@ -282,7 +284,7 @@ body {
   text-align: center;
   font-size: 25px;
   color: #4831d4;
-  max-height: 800px;
+  height: 800px;
   overflow: hidden;
   position: relative;
 }
@@ -354,5 +356,140 @@ body {
 @media only screen and (max-width: 700px) {
   html{
     font-size: 0.9rem;
+  }
+
+  #hello{
+    padding-bottom: 6rem;
+  }
+
+  .cavalier h1{
+    font-size: 2em;
+    max-width: 36vw;
+  }
+
+  .cavalier p{
+    font-size: 1em;
+  }
+
+  .inner-content{
+    padding: 0 4rem;
+    margin-top: calc(6.12em + 2em);
+  }
+
+  #avatar-shapes{
+    right: -4.4em;
+  }
+
+  .visage {
+    width: 11.334em;
+    height: 11.67em;
+    margin-right: calc(0em + 1em);
+  }
+
+  #whoiam h1{
+    font-size: 1.8em;
+  }
+
+  #whoiam p{
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  #skills-content ul{
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  #skills-content ul li:nth-child(2){
+    border: 3px solid #4831d4;
+    border-top: inherit;
+    border-bottom: none;
+  }
+
+  #mywork a{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #hello {
+    background: linear-gradient(180deg, #4831d4 45%, #ccf381 45%);
+    padding-bottom: 3rem;
+  }
+
+  .inner-content{
+    flex-direction: column;
+    padding: 0 5rem;
+    margin-top: calc(0em + 2em);
+  }
+
+  .cavalier{
+    width: 100%;
+    margin-top: 0;
+  }
+  .cavalier h1{
+    width: 100%;
+    max-width: 100%;
+  }
+  .cavalier p{
+    width: 100%;
+  }
+
+  .visage{
+    margin-top: 7rem;
+  }
+
+  #avatar-shapes{
+    top: -70%;
+    right: 4.6em;
+  }
+
+  #mywork a{
+    width: 100%;
+  }
+
+  #mywork figure{
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #hello{
+      background: linear-gradient(180deg, #4831d4 50%, #ccf381 45%);
+  }
+
+  .inner-content{
+    padding: 0 20px;
+  }
+
+  #contact .center{
+    flex-direction: column;
+  }
+
+  .visage{
+    margin-right: -3rem;
+  }
+  #mywork a{
+    width: 80%;
+  }
+  #mywork figure{
+    height: 300px;
+    overflow: visible;
+  }
+
+  #mywork figcaption{
+        transform: rotate(45deg);
+    width: 104%;
+    left: -2%;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    line-height: 1;
+    margin: auto;
+    box-shadow: 0px 5px 8px -5px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
